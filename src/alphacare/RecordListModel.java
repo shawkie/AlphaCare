@@ -14,11 +14,14 @@ import java.util.ArrayList;
  */
 
 public class RecordListModel {
-    private ArrayList recordList;
+    private final ArrayList recordList;
+    
+    public RecordListModel(){
+        recordList = new ArrayList();
+    }
     
     public String getRecord()
     {
-
        return "";
     }
      

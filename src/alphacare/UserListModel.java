@@ -14,8 +14,11 @@ import java.util.ArrayList;
  */
 
 public class UserListModel {
-    private ArrayList userList;
+    private final ArrayList userList;
     
+    public UserListModel(){
+        userList = new ArrayList();
+    }
     public String getPatient()
     {
 

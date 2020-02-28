@@ -9,11 +9,18 @@ package alphacare;
 public class testHarness {
     private PatientModel patientModel;
     private PatientView patientView;
+    private LoginCntrl loginCntl;
+    private RecordListModel recordLM;
     
     public void testHarness(){
         patientModel.setName("Hamzah");
         patientModel.setAddress("1013 S. Allen St");
         patientModel.setBirthdate("10101997");
         patientView.getPatientInfo("Hamzah Wahi, 1013 S. Allen ST, 10101997");
+        
+        loginCntl.authenticate("Jeffrey", "password");
+        recordLM.getRecord();
+        recordLM.putRecord("sample data for record");
+        
     }
 }
