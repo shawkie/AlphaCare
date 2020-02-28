@@ -17,10 +17,18 @@ public class LoginCntrl {
     private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
     
+    public LoginCntrl(){
+        
+    }
+    
     LoginCntrl(UserListModel userListModel, LoginView loginView,TwoFactorView twoFactorView,CreateAccountView createAccountView){
         this.userListModel = userListModel;
         this.loginView = loginView;
         this.twoFactorView = twoFactorView;
         this.createAccountView= createAccountView;
+    }
+    
+    public void authenticate(String userName, String password){
+        System.out.println("Authenticated!");
     }
 }

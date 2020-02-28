@@ -15,14 +15,15 @@ import java.util.ArrayList;
 
 public class RecordListModel {
     private ArrayList recordList;
+    
     public String getRecord()
     {
 
        return "";
     }
      
-     public void putRecord(String putRecord){
+    public void putRecord(String putRecord){
  
          
-     }
+    }
 }
