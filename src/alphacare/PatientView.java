@@ -15,6 +15,11 @@ import javax.swing.JFrame;
 
 public class PatientView extends JFrame {
     private PatientModel model;
+    private String patientInfo;
+
+    public String getPatientInfo(String patientInfo) {
+        return patientInfo;
+    }
     private  PatientView(PatientModel model){
         
     }

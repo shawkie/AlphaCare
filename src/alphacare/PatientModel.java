@@ -5,10 +5,37 @@
  */
 package alphacare;
 
-/**
- * Model that will hold information on a patient.
- * @author hamtaro
- */
+
 public class PatientModel {
+    private String name;
+    private String address;
+    private String birthdate;
+
+    public PatientModel(String name, String address, String birthdate) {
+        this.name = name;
+        this.address = address;
+        this.birthdate = birthdate;
+    }
+
+ 
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
+    }
+
+    @Override
+    public String toString() {
+        return "PatientModel{" + "name=" + name + ", address=" + address + ", birthdate=" + birthdate + '}';
+    }
     
 }

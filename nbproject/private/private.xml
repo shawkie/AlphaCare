@@ -3,26 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/UserListModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/TwoFactorView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/LoginCntrl.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/RecordView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/AlphaCare.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/PatientRecordsView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/ProfileView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/UserCntrl.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/PatientListModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/RecordListModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/README.txt</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/PatientListView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/PatientModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/MenuModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/CreateAccountView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/PatientView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/StaffModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/PatientListController.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/LoginView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/MenuView.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/AlphaCare.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/PatientView.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/RecordListModel.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/PatientModel.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/LoginCntrl.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/testHarness.java</file>
         </group>
     </open-files>
 </project-private>

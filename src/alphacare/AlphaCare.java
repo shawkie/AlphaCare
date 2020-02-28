@@ -12,10 +12,10 @@ package alphacare;
  */
 
 public class AlphaCare {
-
+    private testHarness testHarness;
     
     public static void main(String[] args) {
-        // TODO code application logic here
+       
     }
     
 }
