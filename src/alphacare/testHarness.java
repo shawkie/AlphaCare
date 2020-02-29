@@ -11,6 +11,8 @@ public class testHarness {
     private PatientView patientView;
     private LoginCntrl loginCntl;
     private RecordListModel recordLM;
+    private StaffModel staffModel;
+    private PatientRecordsView pRecordsView;
     
     public void testHarness(){
         patientModel.setName("Hamzah");
@@ -21,6 +23,10 @@ public class testHarness {
         loginCntl.authenticate("Jeffrey", "password");
         recordLM.getRecord();
         recordLM.putRecord("sample data for record");
-        
+     
+        staffModel.setName("Hamzah II");
+        staffModel.setPosition("Nurse");
+        staffModel.toString();
+        pRecordsView.getPatientRecords();
     }
 }

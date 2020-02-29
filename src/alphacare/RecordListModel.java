@@ -25,6 +25,10 @@ public class RecordListModel {
        return "";
     }
      
+    public ArrayList getRecordList() {
+        return recordList;
+    }
+    
     public void putRecord(String putRecord){
  
          
