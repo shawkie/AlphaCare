@@ -38,5 +38,4 @@ public class UserListModel {
 
 
       }
-     public private userType()
 }

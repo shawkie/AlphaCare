@@ -64,6 +64,7 @@ public class PatientModelTest {
         String expResult = "name: nameaddress: addressbirthdate: birthdate";
         String result = instance.toString();
         assertEquals(expResult, result);
+        
         // TODO review the generated test code and remove the default call to fail.
         //fail("failed");
     }
