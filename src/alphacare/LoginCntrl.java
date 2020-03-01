@@ -21,11 +21,11 @@ public class LoginCntrl {
         
     }
     
-    LoginCntrl(UserListModel userListModel, LoginView loginView,TwoFactorView twoFactorView,CreateAccountView createAccountView){
+    public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView){
         this.userListModel = userListModel;
         this.loginView = loginView;
         this.twoFactorView = twoFactorView;
-        this.createAccountView= createAccountView;
+        this.createAccountView = createAccountView;
     }
     
     public void authenticate(String userName, String password){

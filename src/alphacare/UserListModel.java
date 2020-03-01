@@ -26,7 +26,6 @@ public class UserListModel {
     }
      
      public void putPatient(String putRecord){
- 
          
      }
 }

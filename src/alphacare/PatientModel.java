@@ -7,9 +7,13 @@ package alphacare;
 
 
 public class PatientModel {
+    //Basic attributes
     private String name;
     private String address;
     private String birthdate;
+    
+    //record attribute
+    private String[] record;
 
     public PatientModel(String name, String address, String birthdate) {
         this.name = name;
