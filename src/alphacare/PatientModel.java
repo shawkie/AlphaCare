@@ -39,7 +39,7 @@ public class PatientModel {
 
     @Override
     public String toString() {
-        return "PatientModel{" + "name=" + name + ", address=" + address + ", birthdate=" + birthdate + '}';
+        return "name: " + name + "address: " + address + "birthdate: " + birthdate ;
     }
     
 }
