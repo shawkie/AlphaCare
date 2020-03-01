@@ -13,6 +13,7 @@ package alphacare;
 
 public class AlphaCare {
     private static testHarness testHarness;
+   
     
     public static void main(String[] args) {
        testHarness = new testHarness();
