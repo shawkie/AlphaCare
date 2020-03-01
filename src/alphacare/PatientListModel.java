@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 public class PatientListModel {
     private ArrayList patientList;
+    
     public String getPatient()
     {
 
