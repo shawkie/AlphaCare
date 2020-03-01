@@ -12,16 +12,27 @@ import java.util.ArrayList;
  * @author hamtaro
  */
 public class PatientListModel {
-    private ArrayList patientList;
+    private ArrayList<PatientModel> patientList;
     
-    public String getPatient()
-    {
-
-       return "";
+    public PatientModel getPatient(int patientNum) {
+       return (PatientModel) patientList.get(patientNum);
+    }
+    
+    public PatientModel getPatient(String patientName){
+        for (PatientModel patient : patientList) {
+            if(patient.getName().equals(patientName)){
+                return patient;
+            }
+        }
+        return null;
     }
      
-     public void putPatient(String putRecord){
- 
-         
+     public void putPatient(PatientModel putRecord){
+         patientList.add(putRecord);
      }
+     
+    @Override
+    public String toString() {
+        return "PatientListModel{ Holds ArrayList of Patients of size: " + patientList.size() + '}';
+    }
 }

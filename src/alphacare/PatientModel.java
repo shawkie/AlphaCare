@@ -26,6 +26,10 @@ public class PatientModel {
     public void setName(String name) {
         this.name = name;
     }
+    
+    public String getName(){
+        return this.name;
+    }
 
 
     public void setAddress(String address) {
@@ -39,7 +43,7 @@ public class PatientModel {
 
     @Override
     public String toString() {
-        return "PatientModel{" + "name=" + name + ", address=" + address + ", birthdate=" + birthdate + '}';
+        return "name: " + name + "address: " + address + "birthdate: " + birthdate ;
     }
     
 }
