@@ -30,7 +30,6 @@ public class RecordListModel {
     }
     
     public void putRecord(String putRecord){
- 
-         
+   
     }
 }

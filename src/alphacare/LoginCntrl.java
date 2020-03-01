@@ -16,18 +16,24 @@ public class LoginCntrl {
     private LoginView loginView;
     private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
+<<<<<<< HEAD
+
+    public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView) {
+=======
     
     public LoginCntrl(){
         
     }
     
-    LoginCntrl(UserListModel userListModel, LoginView loginView,TwoFactorView twoFactorView,CreateAccountView createAccountView){
+    public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView){
+>>>>>>> 513ea43c3f027846574ffaa3e7e3d0e21f9cd774
         this.userListModel = userListModel;
         this.loginView = loginView;
         this.twoFactorView = twoFactorView;
-        this.createAccountView= createAccountView;
+        this.createAccountView = createAccountView;
     }
     
+   
     public void authenticate(String userName, String password){
         System.out.println("Authenticated!");
     }

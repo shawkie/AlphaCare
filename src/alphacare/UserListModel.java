@@ -27,7 +27,6 @@ public class UserListModel {
 
      public void putPatient(String putRecord){
 
-
      }
      public String getStaff()
      {

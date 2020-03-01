@@ -5,7 +5,6 @@
  */
 package alphacare;
 
-
 public class testHarness {
     private PatientModel patientModel;
     private PatientView patientView;
