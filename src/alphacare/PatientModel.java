@@ -26,6 +26,10 @@ public class PatientModel {
     public void setName(String name) {
         this.name = name;
     }
+    
+    public String getName(){
+        return this.name;
+    }
 
 
     public void setAddress(String address) {

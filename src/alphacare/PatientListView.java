@@ -1,4 +1,5 @@
 package alphacare;
+import java.util.ArrayList;
 import javax.swing.JFrame;
 
 /*
@@ -15,6 +16,11 @@ import javax.swing.JFrame;
 
 public class PatientListView extends JFrame{
     private PatientListModel model;
+    private String patientListInfo;
+
+    public String getPatientInfo(String patientListInfo) {
+        return patientListInfo;
+    }
     private PatientListView(PatientListModel model){
         
     }
