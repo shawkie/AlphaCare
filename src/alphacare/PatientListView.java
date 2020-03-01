@@ -15,27 +15,13 @@ import javax.swing.JFrame;
 
 
 public class PatientListView extends JFrame{
-    private ArrayList<PatientModel> patientList;
-    
-    public PatientModel getPatient(int patientNum) {
-       return (PatientModel) patientList.get(patientNum);
+    private PatientListModel model;
+    private String patientListInfo;
+
+    public String getPatientInfo(String patientListInfo) {
+        return patientListInfo;
     }
-    
-    public PatientModel getPatient(String patientName){
-        for (PatientModel patient : patientList) {
-            if(patient.getName().equals(patientName)){
-                return patient;
-            }
-        }
-        return null;
-    }
-     
-     public void putPatient(PatientModel putRecord){
-         patientList.add(putRecord);
-     }
-     
-    @Override
-    public String toString() {
-        return "PatientListModel{ Holds ArrayList of Patients of size: " + patientList.size() + '}';
+    private PatientListView(PatientListModel model){
+        
     }
 }
