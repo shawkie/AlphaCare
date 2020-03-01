@@ -12,11 +12,13 @@ package alphacare;
  */
 
 public class AlphaCare {
-    private static testHarness testHarness;
+    public static testHarness testHarness;
    
     
     public static void main(String[] args) {
-       testHarness = new testHarness();
+        testHarness = new testHarness();
+        testHarness.testHarness();
+       
     }
     
 }

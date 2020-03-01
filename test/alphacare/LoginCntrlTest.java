@@ -40,7 +40,7 @@ public class LoginCntrlTest {
     /**
      * Test of authenticate method, of class LoginCntrl.
      */
-    @Test
+    @org.junit.Test
     public void testAuthenticate() {
         System.out.println("authenticate");
         String userName = "";

@@ -17,7 +17,7 @@ public class PatientRecordsView extends JFrame {
     private RecordListModel model;
     private ArrayList recordList;
     
-    private PatientRecordsView(RecordListModel model){
+    public PatientRecordsView(RecordListModel model){
         recordList = model.getRecordList();
     }
     
