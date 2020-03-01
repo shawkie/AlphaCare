@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class UserListModel {
     private final ArrayList userList;
-    
+
     public UserListModel(){
         userList = new ArrayList();
     }
@@ -24,8 +24,19 @@ public class UserListModel {
 
        return "";
     }
-     
+
      public void putPatient(String putRecord){
-         
+
      }
+     public String getStaff()
+     {
+
+        return "";
+     }
+
+      public void putStaff(String putRecord){
+
+
+      }
+     public private userType()
 }
