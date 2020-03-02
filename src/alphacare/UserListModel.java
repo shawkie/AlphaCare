@@ -19,15 +19,24 @@ public class UserListModel {
     public UserListModel(){
         userList = new ArrayList();
     }
-    public String getPatient()
+    public String getUser()
     {
 
        return "";
     }
-
+    
+    public ArrayList getUserList(){
+        return userList;
+    }
+     
+     public void putUser(String putUser){
+         userList.add(putUser);
+     }
+     
      public void putPatient(String putRecord){
 
      }
+     
      public String getStaff()
      {
 

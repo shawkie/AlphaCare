@@ -17,6 +17,9 @@ public class PatientView extends JFrame {
     private PatientModel model;
     private String patientInfo;
 
+    public PatientView(){
+        
+    }
     public String getPatientInfo(String patientInfo) {
         return patientInfo;
     }
