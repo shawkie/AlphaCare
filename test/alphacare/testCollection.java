@@ -10,12 +10,11 @@ import org.junit.runners.Suite;
  *
  * @author Jeffrey Oh
  */
-//alphacare.your tset name. class
+//alphacare.your test name. class
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
 {alphacare.PatientModelTest.class,
-       
-}
+alphacare.RecordListModelTest.class}
 )
 public class testCollection {
     

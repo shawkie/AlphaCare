@@ -39,7 +39,7 @@ public class testHarness {
         //test RecordListModel class
         recordLM = new RecordListModel();
         recordLM.putRecord("sample data for record");
-        System.out.println(recordLM.getRecord());
+        System.out.println(recordLM.getRecord(1));
      
         //test StaffModel class
         staffModel = new StaffModel("Dr. Oh", "Surgeon");

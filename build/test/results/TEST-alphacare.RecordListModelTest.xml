@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="LAPTOP-UHSOO2QG" name="alphacare.testHarness" skipped="0" tests="1" time="0.109" timestamp="2020-03-02T00:29:39">
+<testsuite errors="0" failures="0" hostname="LAPTOP-UHSOO2QG" name="alphacare.RecordListModelTest" skipped="0" tests="3" time="0.137" timestamp="2020-03-02T00:19:45">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="javac.test.classpath" value=":build/classes:C:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="javac.test.sourcepath" value="C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\empty" />
-    <property name="javac.includes" value="alphacare/testHarness.java" />
+    <property name="javac.includes" value="alphacare/RecordListModelTest.java" />
     <property name="ant.core.lib" value="C:\Program Files\NetBeans 8.2\extide\ant\lib\ant.jar" />
     <property name="javadoc.windowtitle" value="" />
     <property name="user.dir" value="C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare" />
@@ -28,7 +28,7 @@
     <property name="libs.hamcrest.classpath" value="C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="libs.javac-api.javadoc" value="" />
     <property name="os.name" value="Windows 10" />
-    <property name="test.class" value="alphacare.testHarness" />
+    <property name="test.class" value="alphacare.RecordListModelTest" />
     <property name="libs.beans-binding.classpath" value="C:\Program Files\NetBeans 8.2\java\modules\ext\beansbinding-1.2.1.jar" />
     <property name="ap.proc.none.internal" value="" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
@@ -40,7 +40,7 @@
     <property name="user.name" value="Jeffrey Oh" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner alphacare.testHarness skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\test\results\TEST-alphacare.testHarness.xml crashfile=C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\junitvmwatcher674686894425110722.properties propsfile=C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\junit3071060543391475133.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner alphacare.RecordListModelTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\test\results\TEST-alphacare.RecordListModelTest.xml crashfile=C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\junitvmwatcher441710078723607120.properties propsfile=C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\junit1626708792039144227.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -61,7 +61,7 @@
     <property name="build.compiler.emacs" value="true" />
     <property name="javac.modulepath" value="" />
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed" />
-    <property name="test.includes" value="alphacare/testHarness.java" />
+    <property name="test.includes" value="alphacare/RecordListModelTest.java" />
     <property name="&gt;&gt;&gt;&gt;&gt;&gt;&gt;" value="513ea43c3f027846574ffaa3e7e3d0e21f9cd774" />
     <property name="netbeans.dynamic.classpath" value="C:\Users\Jeffrey Oh\AppData\Roaming\NetBeans\8.2\core\org-openide-filesystems.jar;C:\Users\Jeffrey Oh\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_ja.jar;C:\Users\Jeffrey Oh\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_pt_BR.jar;C:\Users\Jeffrey Oh\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_ru.jar;C:\Users\Jeffrey Oh\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\asm-all-5.0.1.jar;C:\Program Files\NetBeans 8.2\platform\core\core-base.jar;C:\Program Files\NetBeans 8.2\platform\core\core.jar;C:\Program Files\NetBeans 8.2\platform\core\org-netbeans-libs-asm.jar;C:\Program Files\NetBeans 8.2\platform\core\org-openide-filesystems-compat8.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_zh_CN.jar;C:\Program Files\NetBeans 8.2\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
     <property name="java.vm.specification.version" value="1.8" />
@@ -75,7 +75,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\null9109559" />
+    <property name="javac.includesfile.binary" value="C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\null34962699" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value=":build/classes:C:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
@@ -87,7 +87,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="libs.hibernate4-persistencemodelgen.javadoc" value="" />
     <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans 8.2\ide\docs\jaxb-api-doc.zip" />
-    <property name="javac.includes.binary" value="C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\test\classes\alphacare\testHarness.class" />
+    <property name="javac.includes.binary" value="C:\Users\Jeffrey Oh\Documents\NetBeansProjects\AlphaCare\build\test\classes\alphacare\RecordListModelTest.class" />
     <property name="ant.home" value="C:\Program Files\NetBeans 8.2\extide\ant" />
     <property name="libs.junit_4.src" value="C:\Program Files\NetBeans 8.2\platform\docs\junit-4.12-sources.jar" />
     <property name="libs.testng.classpath" value="C:\Program Files\NetBeans 8.2\platform\modules\ext\testng-6.8.1-dist.jar" />
@@ -324,11 +324,12 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="" value="======" />
   </properties>
-  <testcase classname="alphacare.testHarness" name="initializationError" time="0.009">
-    <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-</error>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <testcase classname="alphacare.RecordListModelTest" name="testGetRecordList" time="0.003" />
+  <testcase classname="alphacare.RecordListModelTest" name="testPutRecord" time="0.001" />
+  <testcase classname="alphacare.RecordListModelTest" name="testGetRecord" time="0.001" />
+  <system-out><![CDATA[getRecordList
+putRecord
+getRecord
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
