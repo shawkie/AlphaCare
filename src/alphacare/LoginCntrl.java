@@ -16,17 +16,12 @@ public class LoginCntrl {
     private LoginView loginView;
     private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
-
-<<<<<<< HEAD
-    public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView) {
-=======
     
     public LoginCntrl(){
         
     }
     
     public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView){
->>>>>>> 6238266baf9e1d36ffa4079d8816eb2323659315
         this.userListModel = userListModel;
         this.loginView = loginView;
         this.twoFactorView = twoFactorView;

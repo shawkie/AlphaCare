@@ -12,7 +12,6 @@ package alphacare;
  */
 
 public class AlphaCare {
-<<<<<<< HEAD
     public static testHarness testHarness;
    
     
@@ -20,13 +19,7 @@ public class AlphaCare {
         testHarness = new testHarness();
         testHarness.testHarness();
        
-=======
 //    private static testHarness testHarness;
    
-    
-    public static void main(String[] args) {
-//       testHarness = new testHarness();
->>>>>>> 6238266baf9e1d36ffa4079d8816eb2323659315
     }
-    
 }
