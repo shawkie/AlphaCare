@@ -5,28 +5,19 @@
  */
 
 package alphacare;
-
 /**
  * Class that is called when the application first starts, will call other classes.
  * @author Brendan
  */
 
 public class AlphaCare {
-<<<<<<< HEAD
     public static testHarness testHarness;
-   
     
     public static void main(String[] args) {
         testHarness = new testHarness();
         testHarness.testHarness();
        
-=======
 //    private static testHarness testHarness;
    
-    
-    public static void main(String[] args) {
-//       testHarness = new testHarness();
->>>>>>> 6238266baf9e1d36ffa4079d8816eb2323659315
     }
-    
 }

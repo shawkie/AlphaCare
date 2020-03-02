@@ -18,11 +18,12 @@ public class RecordListModel {
     
     public RecordListModel(){
         recordList = new ArrayList();
+        recordList.add("");
     }
     
-    public String getRecord()
+    public Object getRecord(int index)
     {
-       return "";
+       return recordList.get(index);
     }
      
     public ArrayList getRecordList() {
@@ -30,6 +31,6 @@ public class RecordListModel {
     }
     
     public void putRecord(String putRecord){
-   
+        recordList.add(putRecord);
     }
 }
