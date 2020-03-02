@@ -15,7 +15,8 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses(
 {alphacare.PatientModelTest.class,
 alphacare.RecordListModelTest.class,
-alphacare.StaffModelTest.class}
+alphacare.StaffModelTest.class,
+alphacare.PatientListModelTest.class}
 )
 public class testCollection {
     
