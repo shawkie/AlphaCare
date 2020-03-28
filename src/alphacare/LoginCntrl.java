@@ -14,19 +14,27 @@ import java.awt.event.ActionListener;
 public class LoginCntrl {
 
     private UserListModel userListModel;
+    private PatientModel patientModel;
+    private PatientListModel patientListModel;
     private UserModel testUser;
     private LoginView loginView;
     private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
     private StaffModel staffModel;
+    private MenuView menuView;
 
     public LoginCntrl() {
         userListModel = new UserListModel();
         staffModel = new StaffModel(1, "","");
         loginView = new LoginView(this);
-        createAccountView = new CreateAccountView();
+        createAccountView = new CreateAccountView(this);
         twoFactorView = new TwoFactorView(staffModel);
+        patientModel = new PatientModel(1,"","","");
+        patientListModel = new PatientListModel();
+        menuView = new MenuView();
+        
         loginView.setVisible(true);
+        
         
         testUser = new UserModel(1, "Admin", "admin");
         userListModel.putUser(testUser);
@@ -45,14 +53,27 @@ public class LoginCntrl {
         boolean status = false;
         for (int i = 0; i < userListModel.getUserList().size(); i++) {
             status = getCredentials(i);
+            System.out.println(status);
         }
         return status;
 
     }
     
+    public void createNewUser(String name, String address, String birthDate, String username, String password){
+        userListModel.putUser(new UserModel(2, username, password));
+        patientListModel.putPatient(new PatientModel(2, name, address,birthDate));
+        System.out.println(userListModel.getUserList().toString());
+        System.out.println(patientListModel.getPatientList());
+        
+        loginView.setVisible(true);
+       createAccountView.setVisible(false);
+    }
+    
    public void loginAccount(){
+       System.out.println("login button clicked");
        if(authenticate(loginView.getUserName(),loginView.getPassword())){
        loginView.setVisible(false);
+       menuView.setVisible(true);
        
        }
    }

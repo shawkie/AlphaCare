@@ -1,5 +1,10 @@
 package alphacare;
+import java.awt.Dimension;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,7 +18,24 @@ import javax.swing.JFrame;
  */
 
 public class MenuView extends JFrame{
-    private void MainView(){
+    
+    private JLabel menu;
+    private JPanel content;
+    
+    public MenuView(){
+         menu = new JLabel("menu");
+     
+        content = new JPanel();
+
+       
         
+        content.setPreferredSize(new Dimension(350, 150));
+        content.add(menu);
+        
+        
+        this.setContentPane(content);
+        this.pack();// helps display nicers
+        this.setTitle("Menu");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

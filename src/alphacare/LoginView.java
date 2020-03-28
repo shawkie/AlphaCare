@@ -60,12 +60,13 @@ public class LoginView extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         newUserButton.addActionListener(event -> loginCntrl.switchToCreateAccount());
-
+        loginButton.addActionListener(event -> loginCntrl.loginAccount());
     }
     
     public void loginButtonListener(ActionListener al) 
     {    
         loginButton.addActionListener(event -> loginCntrl.loginAccount());
+        System.out.println("login button clicked");
     }
     
     public void newUserButtonListener(ActionListener al) 

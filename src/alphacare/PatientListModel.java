@@ -16,12 +16,16 @@ public class PatientListModel {
     
     private static final PatientListModel PATIENTLIST = new PatientListModel();
     
-    private PatientListModel(){
+    public PatientListModel(){
         patientList = new ArrayList();
     }
     
     public static PatientListModel getInstance(){
         return PATIENTLIST;
+    }
+    
+    public ArrayList<PatientModel> getPatientList() {
+        return patientList;
     }
     
     public PatientModel getPatient(int id) {

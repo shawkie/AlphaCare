@@ -27,11 +27,16 @@ public class CreateAccountView extends JFrame implements ActionListener{
     private JTextField passwordBox;
     private JButton create;
     private JPanel panel;
+    
+    private LoginCntrl loginCntrl;
 
     // private UserListModel model;
     
-    public CreateAccountView() {
+    public CreateAccountView(LoginCntrl loginCntrl) {
         super("Create New Account");
+        this.loginCntrl = loginCntrl;
+        
+        
         setLayout(new FlowLayout());
 
         panel = new JPanel();
@@ -65,10 +70,15 @@ public class CreateAccountView extends JFrame implements ActionListener{
         this.setTitle("Login");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        create.addActionListener(event -> loginCntrl.createNewUser(nameBox.getText(), addressBox.getText(), birthdateBox.getText(), usernameBox.getText(), passwordBox.getText()));
     }
     public void createButtonListener(ActionListener al) 
     {    
         create.addActionListener(al);
+    }
+    
+    public void createUserInputs(){
+        
     }
 
     @Override

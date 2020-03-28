@@ -23,6 +23,7 @@ public class PatientModel {
         this.name = name;
         this.address = address;
         this.birthdate = birthdate;
+        record = new ArrayList();
         inputRecords();
     }
     
