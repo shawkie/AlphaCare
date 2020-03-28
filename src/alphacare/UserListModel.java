@@ -18,7 +18,7 @@ public class UserListModel {
 
     private static final UserListModel USERLIST = new UserListModel();
 
-    private UserListModel() {
+    public UserListModel() {
         userList = new ArrayList();
     }
 

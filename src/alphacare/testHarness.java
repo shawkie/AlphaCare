@@ -53,7 +53,7 @@ public class testHarness {
         
         
         //test UserListModel class
-        userListModel = new UserListModel();
+        //serListModel = new UserListModel();
         userListModel.putUser("Hamzah");
         System.out.println(userListModel.getUserList());
         System.out.println("test successful");
