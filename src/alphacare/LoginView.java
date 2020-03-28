@@ -27,6 +27,7 @@ public class LoginView extends JFrame{
     private JButton newUserButton;
     private JPanel content;
     private UserListModel model;
+    
     private void connectToLogin(UserListModel model){
         
     }

@@ -42,7 +42,7 @@ public class LoginCntrl {
     //fetches variables from the view and model and compares them,
     //if they match return true, if they dont return false
     private boolean getCredentials(int i) {
-        String userName = userListModel.getUserList().get(i).getUserName();
+        String userName = userListModel.getUserList().get(i).getUsername();
         String password = userListModel.getUserList().get(i).getPassword();
 
         String userNameInput = loginView.getUserName();
