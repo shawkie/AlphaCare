@@ -5,10 +5,31 @@
  */
 package alphacare;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author hamtaro
  */
 public class StaffListModel {
+    private ArrayList<StaffModel> staffList;
     
+    private static final StaffListModel STAFFLIST = new StaffListModel();
+    
+    private StaffListModel(){
+        staffList = new ArrayList();
+    }
+    
+    public static StaffListModel getInstance(){
+        return STAFFLIST;
+    }
+    
+    public StaffModel getStaff(int id){
+        for (StaffModel staff : staffList) {
+            if (staff.getId() == id) {
+                return staff;
+            }
+        }
+        return null;
+    }
 }

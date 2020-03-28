@@ -13,11 +13,13 @@ public class PatientModel {
     private String name;
     private String address;
     private String birthdate;
+    private int id;
     
     //record attribute
     private ArrayList record;
 
-    public PatientModel(String name, String address, String birthdate) {
+    public PatientModel(int identification, String name, String address, String birthdate) {
+        this.id = identification;
         this.name = name;
         this.address = address;
         this.birthdate = birthdate;
@@ -52,6 +54,14 @@ public class PatientModel {
         this.birthdate = birthdate;
     }
 
+    public int getId(){
+        return id;
+    }
+    
+    public void setId(int newId){
+        this.id = newId;
+    }
+    
     @Override
     public String toString() {
         return "name: " + name + "address: " + address + "birthdate: " + birthdate ;
