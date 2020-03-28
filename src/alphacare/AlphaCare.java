@@ -14,10 +14,6 @@ public class AlphaCare {
     public static testHarness testHarness;
     
     public static void main(String[] args) {
-        testHarness = new testHarness();
-        testHarness.testHarness();
-       
-//    private static testHarness testHarness;
    
     }
 }

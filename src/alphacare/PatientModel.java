@@ -5,6 +5,8 @@
  */
 package alphacare;
 
+import java.util.ArrayList;
+
 
 public class PatientModel {
     //Basic attributes
@@ -13,15 +15,24 @@ public class PatientModel {
     private String birthdate;
     
     //record attribute
-    private String[] record;
+    private ArrayList record;
 
     public PatientModel(String name, String address, String birthdate) {
         this.name = name;
         this.address = address;
         this.birthdate = birthdate;
+        inputRecords();
     }
-
- 
+    
+    private void inputRecords(){
+        record.add(name);
+        record.add(address);
+        record.add(birthdate);
+    }
+    
+    public ArrayList getRecord(){
+        return record;
+    }
 
     public void setName(String name) {
         this.name = name;
