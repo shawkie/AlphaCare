@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class UserListModel {
 
-    private final ArrayList userList;
+    private final ArrayList<UserModel> userList;
 
     private static final UserListModel USERLIST = new UserListModel();
 
@@ -26,16 +26,29 @@ public class UserListModel {
         return USERLIST;
     }
 
-    public String getUser() {
-
-        return "";
+    public UserModel getUser(int id) {
+       for(UserModel user : userList){
+           if (user.getId() == id) {
+               return user;
+           }
+       }
+       return null;
+    }
+    
+    public UserModel getUser(String username, String password) {
+       for(UserModel user : userList){
+           if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
+               return user;
+           }
+       }
+       return null;
     }
 
     public ArrayList getUserList() {
         return userList;
     }
 
-    public void putUser(String putUser) {
+    public void putUser(UserModel putUser) {
         userList.add(putUser);
     }
 
