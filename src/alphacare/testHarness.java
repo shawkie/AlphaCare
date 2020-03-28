@@ -23,7 +23,7 @@ public class testHarness {
         
         
         //tests PatientModel class
-        patientModel = new PatientModel("Suhyeok", "123 Calder Way", "4/2/97");
+        //patientModel = new PatientModel("Suhyeok", "123 Calder Way", "4/2/97");
         patientModel.setName("Hamzah");
         patientModel.setAddress("1013 S. Allen St");
         patientModel.setBirthdate("10101997");
@@ -33,7 +33,7 @@ public class testHarness {
         patientView.getPatientInfo("Hamzah Wahi, 1013 S. Allen ST, 10101997");
         
         //test LoginCntrl class
-        loginCntl = new LoginCntrl(userListModel,loginView, twoFactorView, createAccountView);
+        //loginCntl = new LoginCntrl(userListModel,loginView, twoFactorView, createAccountView);
         loginCntl.authenticate("Jeffrey", "password");
         
         //test RecordListModel class
@@ -42,7 +42,7 @@ public class testHarness {
         System.out.println(recordLM.getRecord(1));
      
         //test StaffModel class
-        staffModel = new StaffModel("Dr. Oh", "Surgeon");
+        staffModel = new StaffModel(1, "Dr. Oh", "Surgeon");
         staffModel.setName("Dr. Bang");
         staffModel.setPosition("Nurse");
         System.out.println(staffModel.toString());
@@ -54,7 +54,7 @@ public class testHarness {
         
         //test UserListModel class
         //serListModel = new UserListModel();
-        userListModel.putUser("Hamzah");
+        //userListModel.putUser("Hamzah");
         System.out.println(userListModel.getUserList());
         System.out.println("test successful");
         

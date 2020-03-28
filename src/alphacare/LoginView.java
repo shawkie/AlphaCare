@@ -19,6 +19,7 @@ import javax.swing.*;
 
 
 public class LoginView extends JFrame{
+    
     private JTextField usernameInput;
     private JTextField passwordInput;
     private JLabel usernameLabel;
@@ -27,11 +28,12 @@ public class LoginView extends JFrame{
     private JButton newUserButton;
     private JPanel content;
     private UserListModel model;
-    private void connectToLogin(UserListModel model){
-        
-    }
-    LoginView(UserListModel model){
+    private LoginCntrl loginCntrl;
+    
+    LoginView(LoginCntrl loginCntrl){
         this.model = model;
+        this.loginCntrl = loginCntrl;
+        
         
         usernameLabel = new JLabel("Username");
         passwordLabel = new JLabel("Password");
@@ -55,6 +57,9 @@ public class LoginView extends JFrame{
         this.pack();// helps display nicers
         this.setTitle("Login");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        newUserButton.addActionListener(event -> loginCntrl.switchToCreateAccount());
+
     }
     
     public void loginButtonListener(ActionListener al) 
@@ -64,7 +69,7 @@ public class LoginView extends JFrame{
     
     public void newUserButtonListener(ActionListener al) 
     {    
-        newUserButton.addActionListener(al);
+        newUserButton.addActionListener(event -> loginCntrl.switchToCreateAccount());
     }
     
     public String getUserName(){
@@ -74,4 +79,6 @@ public class LoginView extends JFrame{
     public String getPassword(){
         return passwordInput.getText();
     }
+
+    
 }

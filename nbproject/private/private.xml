@@ -3,32 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/AlphaCare.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/StaffListModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/StaffModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/PatientView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/UserCntrl.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/RecordListModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/UserListModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/test/alphacare/LoginCntrlTest.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/PatientRecordsView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/ProfileView.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/UserModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/PatientModel.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/LoginCntrl.java</file>
-            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/GitHub/src/alphacare/testHarness.java</file>
-=======
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/LoginCntrl.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/test/alphacare/RecordListModelTest.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/UserListModel.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/testHarness.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/test/alphacare/testCollection.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/AlphaCare.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/test/alphacare/PatientModelTest.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/RecordListModel.java</file>
-            <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/test/alphacare/StaffModelTest.java</file>
->>>>>>> 3e4fafc7df1b1d2fb1da32e05854aeb27e547bb7
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/UserListModel.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/StaffModel.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/LoginCntrl.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/LoginView.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/AlphaCare.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/testHarness.java</file>
+            <file>file:/Users/hamtaro/Documents/school/ist%20stuff/SP2020/IST412/AlphaCare/src/alphacare/CreateAccountView.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,5 +1,6 @@
 package alphacare;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -33,19 +34,20 @@ public class CreateAccountView extends JFrame implements ActionListener{
         super("Create New Account");
         setLayout(new FlowLayout());
 
+        panel = new JPanel();
         name = new JLabel("Name");
-        nameBox = new JTextField();
+        nameBox = new JTextField(20);
         birthdate = new JLabel("Birthdate");
-        birthdateBox = new JTextField();
+        birthdateBox = new JTextField(20);
         address = new JLabel("Address");
-        addressBox = new JTextField();
+        addressBox = new JTextField(20);
         username = new JLabel("Username");
-        usernameBox = new JTextField();
+        usernameBox = new JTextField(20);
         password = new JLabel("Password");
-        passwordBox = new JTextField();
+        passwordBox = new JTextField(20);
         create = new JButton("Create User");
-        create.addActionListener(l);
         
+        panel.setPreferredSize(new Dimension(350, 200));
         panel.add(name);
         panel.add(nameBox);
         panel.add(birthdate);
@@ -58,6 +60,15 @@ public class CreateAccountView extends JFrame implements ActionListener{
         panel.add(passwordBox);
         panel.add(create);
         
+        this.setContentPane(panel);
+        this.pack();// helps display nicers
+        this.setTitle("Login");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+    }
+    public void createButtonListener(ActionListener al) 
+    {    
+        create.addActionListener(al);
     }
 
     @Override

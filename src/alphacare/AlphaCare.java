@@ -15,15 +15,17 @@ public class AlphaCare {
     
     public static void main(String[] args) {
    
-        UserListModel userListModel = new UserListModel();
-        StaffModel staffModel = new StaffModel("","");
-        LoginView loginView = new LoginView(userListModel);
-        CreateAccountView createAccountView = new CreateAccountView();
-        TwoFactorView twoFactorView = new TwoFactorView(staffModel);
         
-        LoginCntrl controller = new LoginCntrl(userListModel, loginView,twoFactorView, createAccountView);
+        //tests view
+//        UserListModel userListModel = new UserListModel();
+//        StaffModel staffModel = new StaffModel(1, "","");
+//        CreateAccountView createAccountView = new CreateAccountView();
+//        TwoFactorView twoFactorView = new TwoFactorView(staffModel);
         
-        loginView.setVisible(true);
+        LoginCntrl loginCntrl = new LoginCntrl();
+        
+
+        //loginView.setVisible(true);
         
     }
 }
