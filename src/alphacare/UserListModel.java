@@ -15,10 +15,17 @@ import java.util.ArrayList;
 
 public class UserListModel {
     private final ArrayList userList;
-
-    public UserListModel(){
+    
+    private static final UserListModel USERLIST = new UserListModel();
+    
+    private UserListModel(){
         userList = new ArrayList();
     }
+    
+    public static UserListModel getInstance(){
+        return USERLIST;
+    }
+    
     public String getUser()
     {
 
