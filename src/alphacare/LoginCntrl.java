@@ -3,57 +3,55 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package alphacare;
 
 /**
  * Controller that handles a user logging in or if new, creating an account.
+ *
  * @author Project Team 5
  */
-
 public class LoginCntrl {
+
     private UserListModel userListModel;
     private LoginView loginView;
     private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
-    
-    public LoginCntrl(){
-        
+
+    public LoginCntrl() {
+
     }
-    
-    public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView){
+
+    public LoginCntrl(UserListModel userListModel, LoginView loginView, TwoFactorView twoFactorView, CreateAccountView createAccountView) {
         this.userListModel = userListModel;
         this.loginView = loginView;
         this.twoFactorView = twoFactorView;
         this.createAccountView = createAccountView;
     }
 
-
-   
-    
     // depending on status show a warning or allow them into the application
-    public boolean authenticate(String userName, String password){
-        
+    public boolean authenticate(String userName, String password) {
+
         boolean status = false;
-        for(int i = 0; i < userListModel.getUserList().size(); i++){
+        for (int i = 0; i < userListModel.getUserList().size(); i++) {
             status = getCredentials(i);
         }
         return status;
-        
+
     }
-    
+
     //fetches variables from the view and model and compares them,
     //if they match return true, if they dont return false
-    private boolean getCredentials(int i){
+    private boolean getCredentials(int i) {
         String userName = userListModel.getUserList().get(i).getUserName();
         String password = userListModel.getUserList().get(i).getPassword();
-        
+
         String userNameInput = loginView.getUserName();
         String userPasswordInput = loginView.getPassword();
-        
-        if(userNameInput.equals(userName) && userPasswordInput.equals(password)){
+
+        if (userNameInput.equals(userName) && userPasswordInput.equals(password)) {
             return true;
+        } else {
+            return false;
         }
-        else return false;
     }
 }

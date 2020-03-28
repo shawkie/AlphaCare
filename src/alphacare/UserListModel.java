@@ -3,55 +3,52 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package alphacare;
 
 import java.util.ArrayList;
 
 /**
  * Model that will hold a list of application users.
+ *
  * @author Project Team 5
  */
-
 public class UserListModel {
+
     private final ArrayList userList;
-    
+
     private static final UserListModel USERLIST = new UserListModel();
-    
-    private UserListModel(){
+
+    private UserListModel() {
         userList = new ArrayList();
     }
-    
-    public static UserListModel getInstance(){
+
+    public static UserListModel getInstance() {
         return USERLIST;
     }
-    
-    public String getUser()
-    {
 
-       return "";
-    }
-    
-    public ArrayList getUserList(){
-        return userList;
-    }
-     
-     public void putUser(String putUser){
-         userList.add(putUser);
-     }
-     
-     public void putPatient(String putRecord){
-
-     }
-     
-     public String getStaff()
-     {
+    public String getUser() {
 
         return "";
-     }
+    }
 
-      public void putStaff(String putRecord){
+    public ArrayList getUserList() {
+        return userList;
+    }
 
+    public void putUser(String putUser) {
+        userList.add(putUser);
+    }
 
-      }
+    public void putPatient(String putRecord) {
+
+    }
+
+    public String getStaff() {
+
+        return "";
+    }
+
+    public void putStaff(String putRecord) {
+
+    }
 }
