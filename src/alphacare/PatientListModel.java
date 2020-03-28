@@ -13,9 +13,24 @@ import java.util.ArrayList;
  */
 public class PatientListModel {
     private ArrayList<PatientModel> patientList;
-
-    public PatientModel getPatient(int patientNum) {
-       return (PatientModel) patientList.get(patientNum);
+    
+    private static final PatientListModel PATIENTLIST = new PatientListModel();
+    
+    private PatientListModel(){
+        patientList = new ArrayList();
+    }
+    
+    public static PatientListModel getInstance(){
+        return PATIENTLIST;
+    }
+    
+    public PatientModel getPatient(int id) {
+       for (PatientModel patient : patientList) {
+            if (patient.getId() == id) {
+                return patient;
+            }
+        }
+        return null;
     }
     
     public PatientModel getPatient(String patientName){
