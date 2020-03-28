@@ -31,8 +31,29 @@ public class LoginCntrl {
 
    
     
-   
-    public void authenticate(String userName, String password){
-        System.out.println("Authenticated!");
+    // depending on status show a warning or allow them into the application
+    public boolean authenticate(String userName, String password){
+        
+        boolean status = false;
+        for(int i = 0; i < userListModel.getUserList().size(); i++){
+            status = getCredentials(i);
+        }
+        return status;
+        
+    }
+    
+    //fetches variables from the view and model and compares them,
+    //if they match return true, if they dont return false
+    private boolean getCredentials(int i){
+        String userName = userListModel.getUserList().get(i).getUserName();
+        String password = userListModel.getUserList().get(i).getPassword();
+        
+        String userNameInput = loginView.getUserName();
+        String userPasswordInput = loginView.getPassword();
+        
+        if(userNameInput.equals(userName) && userPasswordInput.equals(password)){
+            return true;
+        }
+        else return false;
     }
 }

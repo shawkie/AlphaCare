@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class PatientListModel {
     private ArrayList<PatientModel> patientList;
-    
+
     public PatientModel getPatient(int patientNum) {
        return (PatientModel) patientList.get(patientNum);
     }
