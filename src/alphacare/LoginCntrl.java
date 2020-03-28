@@ -51,6 +51,7 @@ public class LoginCntrl {
 
     //fetches variables from the view and model and compares them,
     //if they match return true, if they dont return false
+<<<<<<< HEAD
 //    private boolean getCredentials(int i) {
 //        String userName = userListModel.getUserList().get(i).getUserName();
 //        String password = userListModel.getUserList().get(i).getPassword();
@@ -64,4 +65,19 @@ public class LoginCntrl {
 //            return false;
 //        }
 //    }
+=======
+    private boolean getCredentials(int i) {
+        String userName = userListModel.getUserList().get(i).getUsername();
+        String password = userListModel.getUserList().get(i).getPassword();
+
+        String userNameInput = loginView.getUserName();
+        String userPasswordInput = loginView.getPassword();
+
+        if (userNameInput.equals(userName) && userPasswordInput.equals(password)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+>>>>>>> 8d36f24bf83a094768ef04f9039e7e0ebc7fb1e5
 }

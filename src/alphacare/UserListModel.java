@@ -44,7 +44,7 @@ public class UserListModel {
        return null;
     }
 
-    public ArrayList getUserList() {
+    public ArrayList<UserModel> getUserList() {
         return userList;
     }
 
