@@ -14,6 +14,7 @@ import java.awt.event.ActionListener;
 public class LoginCntrl {
 
     private UserListModel userListModel;
+    private UserModel testUser;
     private LoginView loginView;
     private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
@@ -27,6 +28,12 @@ public class LoginCntrl {
         twoFactorView = new TwoFactorView(staffModel);
         loginView.setVisible(true);
         
+        testUser = new UserModel(1, "Admin", "admin");
+        userListModel.putUser(testUser);
+        
+        System.out.println(userListModel.getUserList().get(0).getUsername());
+        System.out.println(userListModel.getUserList().get(0).getPassword());
+
         
     }
 
@@ -34,14 +41,21 @@ public class LoginCntrl {
 
     // depending on status show a warning or allow them into the application
     public boolean authenticate(String userName, String password) {
-
+        
         boolean status = false;
         for (int i = 0; i < userListModel.getUserList().size(); i++) {
-           // status = getCredentials(i);
+            status = getCredentials(i);
         }
         return status;
 
     }
+    
+   public void loginAccount(){
+       if(authenticate(loginView.getUserName(),loginView.getPassword())){
+       loginView.setVisible(false);
+       
+       }
+   }
     
 
    public void switchToCreateAccount(){
@@ -51,21 +65,6 @@ public class LoginCntrl {
 
     //fetches variables from the view and model and compares them,
     //if they match return true, if they dont return false
-<<<<<<< HEAD
-//    private boolean getCredentials(int i) {
-//        String userName = userListModel.getUserList().get(i).getUserName();
-//        String password = userListModel.getUserList().get(i).getPassword();
-//
-//        String userNameInput = loginView.getUserName();
-//        String userPasswordInput = loginView.getPassword();
-//
-//        if (userNameInput.equals(userName) && userPasswordInput.equals(password)) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
-=======
     private boolean getCredentials(int i) {
         String userName = userListModel.getUserList().get(i).getUsername();
         String password = userListModel.getUserList().get(i).getPassword();
@@ -79,5 +78,7 @@ public class LoginCntrl {
             return false;
         }
     }
->>>>>>> 8d36f24bf83a094768ef04f9039e7e0ebc7fb1e5
+
+    
+    
 }

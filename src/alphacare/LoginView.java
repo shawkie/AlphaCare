@@ -27,19 +27,13 @@ public class LoginView extends JFrame{
     private JButton loginButton;
     private JButton newUserButton;
     private JPanel content;
-    private UserListModel model;
-<<<<<<< HEAD
+
     private LoginCntrl loginCntrl;
     
+
+ 
+   
     LoginView(LoginCntrl loginCntrl){
-=======
-    
-    private void connectToLogin(UserListModel model){
-        
-    }
-    LoginView(UserListModel model){
->>>>>>> 8d36f24bf83a094768ef04f9039e7e0ebc7fb1e5
-        this.model = model;
         this.loginCntrl = loginCntrl;
         
         
@@ -54,7 +48,6 @@ public class LoginView extends JFrame{
         
         
         content.setPreferredSize(new Dimension(350, 150));
-         //content = new JPanel(layout); 
         content.add(usernameLabel);
         content.add(usernameInput);
         content.add(passwordLabel);
@@ -72,7 +65,7 @@ public class LoginView extends JFrame{
     
     public void loginButtonListener(ActionListener al) 
     {    
-        loginButton.addActionListener(al);
+        loginButton.addActionListener(event -> loginCntrl.loginAccount());
     }
     
     public void newUserButtonListener(ActionListener al) 
