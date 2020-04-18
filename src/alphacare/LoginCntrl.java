@@ -18,7 +18,7 @@ public class LoginCntrl {
     private UserModel testUser;
     private LoginView loginView;
     private CreateAccountView createAccountView;
-    private MenuView menuView;
+    private MenuCntrl menuCntrl;
     private int userCount;
     private int patientCount;
 
@@ -31,8 +31,7 @@ public class LoginCntrl {
         loginView = new LoginView(this);
         createAccountView = new CreateAccountView(this);
         patientListModel = new PatientListModel();
-        menuView = new MenuView();
-        
+        menuCntrl = new MenuCntrl();
         loginView.setVisible(true);
         
         
@@ -73,12 +72,14 @@ public class LoginCntrl {
     
    public void loginAccount(){
        if(authenticate(loginView.getUserName(),loginView.getPassword())){
-       loginView.setVisible(false);
-       menuView.setVisible(true);
-       
+           switchToMenu();
        }
    }
     
+   private void switchToMenu(){
+       loginView.setVisible(false);
+       menuCntrl.switchToMenu();
+   }
 
    public void switchToCreateAccount(){
        loginView.setVisible(false);

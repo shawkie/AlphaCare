@@ -14,11 +14,11 @@ import java.util.ArrayList;
  */
 
 public class RecordListModel {
-    private final ArrayList recordList;
+    private final ArrayList<RecordModel> recordList;
     
     public RecordListModel(){
         recordList = new ArrayList();
-        recordList.add("");
+        recordList.add(new RecordModel("date", "record"));
     }
     
     public Object getRecord(int index)
@@ -31,6 +31,6 @@ public class RecordListModel {
     }
     
     public void putRecord(String putRecord){
-        recordList.add(putRecord);
+        recordList.add(new RecordModel("date",putRecord));
     }
 }

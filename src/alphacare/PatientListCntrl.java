@@ -11,12 +11,14 @@ package alphacare;
  */
 public class PatientListCntrl {
     private PatientListModel model;
-    private PatientListView view;
+    private PatientListView patientListView;
 
-    public PatientListCntrl(PatientListModel model, PatientListView view) {
-        this.model = model;
-        this.view = view;
+    public PatientListCntrl() {
+        //this.model = model;
+        this.patientListView = new PatientListView(this);
     }
     
-    
+    public void switchToPatientListView(){
+        patientListView.setVisible(true);
+    }
 }

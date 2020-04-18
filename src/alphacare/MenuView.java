@@ -19,13 +19,14 @@ import javax.swing.JTextField;
  */
 
 public class MenuView extends JFrame{
-    
+    private MenuCntrl menuCntrl;
     private JFrame frame;
     private JLabel menu;
     private JPanel content;
     private JButton viewPatientsButton;
     
-    public MenuView(){
+    public MenuView(MenuCntrl menuCntrl){
+        this.menuCntrl = menuCntrl;
         menu = new JLabel("menu");
         viewPatientsButton = new JButton("View Patients");
         frame = new JFrame();
@@ -39,5 +40,6 @@ public class MenuView extends JFrame{
         this.pack();// helps display nicers
         this.setTitle("Menu");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        viewPatientsButton.addActionListener(event -> menuCntrl.switchToPaitentList());
     }
 }
