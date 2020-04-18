@@ -35,7 +35,7 @@ public class CreateAccountView extends JFrame implements ActionListener{
     public CreateAccountView(LoginCntrl loginCntrl) {
         super("Create New Account");
         this.loginCntrl = loginCntrl;
-        
+        this.setResizable(false);
         
         setLayout(new FlowLayout());
 

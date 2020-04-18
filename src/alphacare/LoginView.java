@@ -36,18 +36,19 @@ public class LoginView extends JFrame{
     LoginView(LoginCntrl loginCntrl){
         this.loginCntrl = loginCntrl;
         
-        
         usernameLabel = new JLabel("Username");
         passwordLabel = new JLabel("Password");
         usernameInput = new JTextField(20);
         passwordInput = new JTextField(20);
         content = new JPanel();
+        this.setResizable(false);
+        
 
         newUserButton = new JButton("New User");
         loginButton = new JButton("Login");
         
-        
         content.setPreferredSize(new Dimension(350, 150));
+        
         content.add(usernameLabel);
         content.add(usernameInput);
         content.add(passwordLabel);

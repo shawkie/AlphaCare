@@ -25,11 +25,14 @@ public class LoginCntrl {
 
     public LoginCntrl() {
         userListModel = new UserListModel();
+        
+        
         staffModel = new StaffModel(1, "","");
+        patientModel = new PatientModel(1,"","","");
+
         loginView = new LoginView(this);
         createAccountView = new CreateAccountView(this);
         twoFactorView = new TwoFactorView(staffModel);
-        patientModel = new PatientModel(1,"","","");
         patientListModel = new PatientListModel();
         menuView = new MenuView();
         
@@ -70,7 +73,6 @@ public class LoginCntrl {
     }
     
    public void loginAccount(){
-       System.out.println("login button clicked");
        if(authenticate(loginView.getUserName(),loginView.getPassword())){
        loginView.setVisible(false);
        menuView.setVisible(true);

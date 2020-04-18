@@ -22,9 +22,7 @@ public class UserListModel {
         userList = new ArrayList();
     }
 
-    public static UserListModel getInstance() {
-        return USERLIST;
-    }
+    
 
     public UserModel getUser(int id) {
        for(UserModel user : userList){
@@ -46,6 +44,9 @@ public class UserListModel {
 
     public ArrayList<UserModel> getUserList() {
         return userList;
+    }
+    public static UserListModel getInstance() {
+        return USERLIST;
     }
 
     public void putUser(UserModel putUser) {
