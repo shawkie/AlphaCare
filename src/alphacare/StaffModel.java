@@ -19,6 +19,9 @@ public class StaffModel {
         this.name = name;
         this.position = position;
     }
+    
+    
+    
 
     public void setName(String name) {
         this.name = name;

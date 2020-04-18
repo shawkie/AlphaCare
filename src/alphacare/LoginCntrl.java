@@ -14,25 +14,22 @@ import java.awt.event.ActionListener;
 public class LoginCntrl {
 
     private UserListModel userListModel;
-    private PatientModel patientModel;
     private PatientListModel patientListModel;
     private UserModel testUser;
     private LoginView loginView;
-    private TwoFactorView twoFactorView;
     private CreateAccountView createAccountView;
-    private StaffModel staffModel;
     private MenuView menuView;
+    private int userCount;
+    private int patientCount;
 
     public LoginCntrl() {
         userListModel = new UserListModel();
+        userCount = 1;
+        patientCount = 1;
         
-        
-        staffModel = new StaffModel(1, "","");
-        patientModel = new PatientModel(1,"","","");
 
         loginView = new LoginView(this);
         createAccountView = new CreateAccountView(this);
-        twoFactorView = new TwoFactorView(staffModel);
         patientListModel = new PatientListModel();
         menuView = new MenuView();
         
@@ -63,13 +60,15 @@ public class LoginCntrl {
     }
     
     public void createNewUser(String name, String address, String birthDate, String username, String password){
-        userListModel.putUser(new UserModel(2, username, password));
-        patientListModel.putPatient(new PatientModel(2, name, address,birthDate));
+        userCount++;
+        patientCount++;
+        userListModel.putUser(new UserModel(userCount, username, password));
+        patientListModel.putPatient(new PatientModel(patientCount, name, address,birthDate));
         System.out.println(userListModel.getUserList().toString());
         System.out.println(patientListModel.getPatientList());
         
         loginView.setVisible(true);
-       createAccountView.setVisible(false);
+        createAccountView.setVisible(false);
     }
     
    public void loginAccount(){

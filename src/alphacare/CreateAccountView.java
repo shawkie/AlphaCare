@@ -41,15 +41,15 @@ public class CreateAccountView extends JFrame implements ActionListener{
 
         panel = new JPanel();
         nameLabel = new JLabel("Name");
-        nameTextbox = new JTextField(20);
+        nameTextbox = new JTextField("", 20);
         birthdateLabel = new JLabel("Birthdate");
-        birthdateTextbox = new JTextField(20);
+        birthdateTextbox = new JTextField("", 20);
         addressLabel = new JLabel("Address");
-        addressTextbox = new JTextField(20);
+        addressTextbox = new JTextField("", 20);
         usernameLabel = new JLabel("Username");
-        usernameTextbox = new JTextField(20);
+        usernameTextbox = new JTextField("", 20);
         passwordLabel = new JLabel("Password");
-        passwordTextbox = new JTextField(20);
+        passwordTextbox = new JTextField("", 20);
         createButton = new JButton("Create User");
         
         panel.setPreferredSize(new Dimension(350, 200));
