@@ -45,7 +45,7 @@ public class UserListModel {
     public ArrayList<UserModel> getUserList() {
         return userList;
     }
-//allows UserList to be accesss byu any other method because of it's static property
+//allows UserList to be accesss by any other method because of it's static property
     public static UserListModel getInstance() {
         return USERLIST;
     }
