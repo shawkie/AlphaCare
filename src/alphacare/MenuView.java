@@ -1,5 +1,6 @@
 package alphacare;
 import java.awt.Dimension;
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,21 +20,22 @@ import javax.swing.JTextField;
 
 public class MenuView extends JFrame{
     
+    private JFrame frame;
     private JLabel menu;
     private JPanel content;
+    private JButton viewPatientsButton;
     
     public MenuView(){
-         menu = new JLabel("menu");
-     
+        menu = new JLabel("menu");
+        viewPatientsButton = new JButton("View Patients");
+        frame = new JFrame();
         content = new JPanel();
-
-       
-        
         content.setPreferredSize(new Dimension(350, 150));
-        content.add(menu);
         
+        frame.setLayout(new GridLayout(1,3));
+        frame.add(content);
         
-        this.setContentPane(content);
+//        this.setContentPane(content);
         this.pack();// helps display nicers
         this.setTitle("Menu");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
