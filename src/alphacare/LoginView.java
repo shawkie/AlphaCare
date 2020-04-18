@@ -20,8 +20,8 @@ import javax.swing.*;
 
 public class LoginView extends JFrame{
     
-    private JTextField usernameInput;
-    private JTextField passwordInput;
+    private JTextField usernameTextbox;
+    private JTextField passwordTextbox;
     private JLabel usernameLabel;
     private JLabel passwordLabel;
     private JButton loginButton;
@@ -38,8 +38,8 @@ public class LoginView extends JFrame{
         
         usernameLabel = new JLabel("Username");
         passwordLabel = new JLabel("Password");
-        usernameInput = new JTextField(20);
-        passwordInput = new JTextField(20);
+        usernameTextbox = new JTextField(20);
+        passwordTextbox = new JTextField(20);
         content = new JPanel();
         this.setResizable(false);
         
@@ -50,9 +50,9 @@ public class LoginView extends JFrame{
         content.setPreferredSize(new Dimension(350, 150));
         
         content.add(usernameLabel);
-        content.add(usernameInput);
+        content.add(usernameTextbox);
         content.add(passwordLabel);
-        content.add(passwordInput);
+        content.add(passwordTextbox);
         content.add(loginButton);
         content.add(newUserButton);
         this.setContentPane(content);
@@ -76,11 +76,11 @@ public class LoginView extends JFrame{
     }
     
     public String getUserName(){
-        return usernameInput.getText();
+        return usernameTextbox.getText();
     }
     
     public String getPassword(){
-        return passwordInput.getText();
+        return passwordTextbox.getText();
     }
 
     
