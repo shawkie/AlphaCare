@@ -5,6 +5,8 @@
  */
 package alphacare;
 
+import java.util.ArrayList;
+
 /**
  * Controller that will handle lists of patients that a medical professional has access to.
  * @author hamtaro
@@ -21,4 +23,9 @@ public class PatientListCntrl {
     public void switchToPatientListView(){
         patientListView.setVisible(true);
     }
+    
+    public PatientListModel getPatientList(){
+        return model;
+    }
+    
 }

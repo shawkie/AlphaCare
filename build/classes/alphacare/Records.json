@@ -1,17 +1,15 @@
 {
+    "Name": "",
     "Records": [
         {
-            "name": "John Doe",
             "date": "1/1/2019",
             "record": "Flu Shot"
         },
         {
-            "name": "John Doe",
             "date": "5/15/2019",
             "record": "Basic Check Up"
         },
         {
-            "name": "John Doe",
             "date": "11/31/2019",
             "record": "Blood Test"
         }
