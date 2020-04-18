@@ -19,7 +19,7 @@ public class StaffListModel {
     private StaffListModel(){
         staffList = new ArrayList();
     }
-    
+//allows StaffList to be accesss byu any other method because of it's static property    
     public static StaffListModel getInstance(){
         return STAFFLIST;
     }

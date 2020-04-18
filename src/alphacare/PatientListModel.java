@@ -19,7 +19,7 @@ public class PatientListModel {
     public PatientListModel(){
         patientList = new ArrayList();
     }
-    
+//allows PatientList to be accesss byu any other method because of it's static property
     public static PatientListModel getInstance(){
         return PATIENTLIST;
     }
