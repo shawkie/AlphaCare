@@ -10,9 +10,11 @@ package alphacare;
  * @author bso5036
  */
 public class RecordModel {
+    private String name;
     private String date;
     private String record;
-    public RecordModel(String date, String record){
+    public RecordModel(String name, String date, String record){
+        this.name = name;
         this.date = date;
         this.record = record;
     }
@@ -43,5 +45,19 @@ public class RecordModel {
      */
     public void setRecord(String record) {
         this.record = record;
+    }
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 }
