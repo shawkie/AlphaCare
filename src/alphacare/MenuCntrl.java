@@ -26,6 +26,7 @@ public class MenuCntrl {
         System.out.println("Patient List");
         menuView.setVisible(false);
         patientListCntrl.switchToPatientListView();
+        System.out.println(patientListCntrl.getPatientList().getPatient("John"));
     }
 
     void addNewPatient() {

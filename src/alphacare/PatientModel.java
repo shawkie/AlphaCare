@@ -33,6 +33,7 @@ public class PatientModel {
         this.birthdate = birthdate;
         record = new ArrayList();
         inputRecords();
+        System.out.println(record);
     }
     
     private void inputRecords(){
@@ -49,6 +50,7 @@ public class PatientModel {
             {
                 record.add(iterator);
             }
+           
         }
         catch(FileNotFoundException e) {
             e.printStackTrace();
