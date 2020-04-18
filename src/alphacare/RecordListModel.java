@@ -18,7 +18,7 @@ public class RecordListModel {
     
     public RecordListModel(){
         recordList = new ArrayList();
-        recordList.add(new RecordModel("date", "record"));
+        recordList.add(new RecordModel("name", "date", "record"));
     }
     
     public Object getRecord(int index)
@@ -31,6 +31,10 @@ public class RecordListModel {
     }
     
     public void putRecord(String putRecord){
-        recordList.add(new RecordModel("date",putRecord));
+        recordList.add(new RecordModel("name", "date",putRecord));
+    }
+    
+    public void addRecord(String name, String date, String record){
+        recordList.add(new RecordModel(name, date, record));
     }
 }
