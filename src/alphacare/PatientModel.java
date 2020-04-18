@@ -5,7 +5,15 @@
  */
 package alphacare;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Iterator;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.JSONObject;
 
 
 public class PatientModel {
@@ -28,9 +36,33 @@ public class PatientModel {
     }
     
     private void inputRecords(){
-        record.add(name);
-        record.add(address);
-        record.add(birthdate);
+        JSONParser parser = new JSONParser();
+        
+        try
+        {
+            Object obj = parser.parse(new FileReader("Records.json"));
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray recordsArray = (JSONArray) jsonObject.get("Records");
+            Iterator<String> iterator = recordsArray.iterator();
+            
+            while(iterator.hasNext())
+            {
+                record.add(iterator);
+            }
+        }
+        catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        catch(IOException e) {
+            e.printStackTrace();
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+//        
+//        record.add(name);
+//        record.add(address);
+//        record.add(birthdate);
     }
     
     public ArrayList getRecord(){
