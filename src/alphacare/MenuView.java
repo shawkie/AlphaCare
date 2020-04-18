@@ -2,12 +2,10 @@ package alphacare;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,8 +19,7 @@ import javax.swing.JTextField;
  */
 
 public class MenuView extends JFrame{
-    private MenuCntrl menuCntrl;
-    private JFrame frame;
+    private final MenuCntrl menuCntrl;
     private JLabel menu;
     private JPanel content;
     private JPanel buttonPanel;

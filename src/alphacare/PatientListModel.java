@@ -18,6 +18,8 @@ public class PatientListModel {
     
     public PatientListModel(){
         patientList = new ArrayList();
+        patientList.add(new PatientModel(1,"John","Address","Birthdate"));
+        
     }
 //allows PatientList to be accesss byu any other method because of it's static property
     public static PatientListModel getInstance(){

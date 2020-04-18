@@ -12,7 +12,8 @@ package alphacare;
 
 public class RecordView {
     private RecordListModel model;
-    RecordView (RecordListModel model){
+    
+    public RecordView (RecordListModel model){
         
     }
 }

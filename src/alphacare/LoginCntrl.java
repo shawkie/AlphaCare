@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package alphacare;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 /**
  * Controller that handles a user logging in or if new, creating an account.
  *
