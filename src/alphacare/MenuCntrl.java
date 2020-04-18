@@ -27,4 +27,8 @@ public class MenuCntrl {
         menuView.setVisible(false);
         patientListCntrl.switchToPatientListView();
     }
+
+    void addNewPatient() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
