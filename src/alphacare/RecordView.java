@@ -5,6 +5,7 @@
  */
 package alphacare;
 
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 /**
@@ -12,12 +13,24 @@ import javax.swing.JLabel;
  * @author Brendan
  */
 
-public class RecordView {
+public class RecordView extends JFrame{
     private RecordListModel model;
+    private int currentIndex;
+    private PatientListCntrl pListCntrl;
     private JLabel nameLabel;
     private JLabel IDLabel;
     
     public RecordView (RecordListModel model){
+        
+    }
+
+    public RecordView(PatientListCntrl patientListCntrl, int startingIndex) {
+        pListCntrl = patientListCntrl;
+        currentIndex = startingIndex;
+        initComponents();
+    }
+
+    private void initComponents() {
         
     }
 
