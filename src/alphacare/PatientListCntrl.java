@@ -9,11 +9,11 @@ package alphacare;
  * Controller that will handle lists of patients that a medical professional has access to.
  * @author hamtaro
  */
-public class PatientListController {
+public class PatientListCntrl {
     private PatientListModel model;
     private PatientListView view;
 
-    public PatientListController(PatientListModel model, PatientListView view) {
+    public PatientListCntrl(PatientListModel model, PatientListView view) {
         this.model = model;
         this.view = view;
     }

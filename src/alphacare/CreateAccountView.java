@@ -15,17 +15,17 @@ public class CreateAccountView extends JFrame implements ActionListener{
      *
      */
     private static final long serialVersionUID = 2954612794261113380L; //IDE said "The serializable class CreateAccountView does not declare a static final serialVersionUID field of type long"
-    private JLabel name;
-    private JLabel birthdate;
-    private JLabel address;
-    private JLabel username;
-    private JLabel password;
-    private JTextField nameBox;
-    private JTextField birthdateBox;
-    private JTextField addressBox;
-    private JTextField usernameBox;
-    private JTextField passwordBox;
-    private JButton create;
+    private JLabel nameLabel;
+    private JLabel birthdateLabel;
+    private JLabel addressLabel;
+    private JLabel usernameLabel;
+    private JLabel passwordLabel;
+    private JTextField nameTextbox;
+    private JTextField birthdateTextbox;
+    private JTextField addressTextbox;
+    private JTextField usernameTextbox;
+    private JTextField passwordTextbox;
+    private JButton createButton;
     private JPanel panel;
     
     private LoginCntrl loginCntrl;
@@ -40,41 +40,41 @@ public class CreateAccountView extends JFrame implements ActionListener{
         setLayout(new FlowLayout());
 
         panel = new JPanel();
-        name = new JLabel("Name");
-        nameBox = new JTextField(20);
-        birthdate = new JLabel("Birthdate");
-        birthdateBox = new JTextField(20);
-        address = new JLabel("Address");
-        addressBox = new JTextField(20);
-        username = new JLabel("Username");
-        usernameBox = new JTextField(20);
-        password = new JLabel("Password");
-        passwordBox = new JTextField(20);
-        create = new JButton("Create User");
+        nameLabel = new JLabel("Name");
+        nameTextbox = new JTextField(20);
+        birthdateLabel = new JLabel("Birthdate");
+        birthdateTextbox = new JTextField(20);
+        addressLabel = new JLabel("Address");
+        addressTextbox = new JTextField(20);
+        usernameLabel = new JLabel("Username");
+        usernameTextbox = new JTextField(20);
+        passwordLabel = new JLabel("Password");
+        passwordTextbox = new JTextField(20);
+        createButton = new JButton("Create User");
         
         panel.setPreferredSize(new Dimension(350, 200));
-        panel.add(name);
-        panel.add(nameBox);
-        panel.add(birthdate);
-        panel.add(birthdateBox);
-        panel.add(address);
-        panel.add(addressBox);
-        panel.add(username);
-        panel.add(usernameBox);
-        panel.add(password);
-        panel.add(passwordBox);
-        panel.add(create);
+        panel.add(nameLabel);
+        panel.add(nameTextbox);
+        panel.add(birthdateLabel);
+        panel.add(birthdateTextbox);
+        panel.add(addressLabel);
+        panel.add(addressTextbox);
+        panel.add(usernameLabel);
+        panel.add(usernameTextbox);
+        panel.add(passwordLabel);
+        panel.add(passwordTextbox);
+        panel.add(createButton);
         
         this.setContentPane(panel);
         this.pack();// helps display nicers
         this.setTitle("Login");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        create.addActionListener(event -> loginCntrl.createNewUser(nameBox.getText(), addressBox.getText(), birthdateBox.getText(), usernameBox.getText(), passwordBox.getText()));
+        createButton.addActionListener(event -> loginCntrl.createNewUser(nameTextbox.getText(), addressTextbox.getText(), birthdateTextbox.getText(), usernameTextbox.getText(), passwordTextbox.getText()));
     }
     public void createButtonListener(ActionListener al) 
     {    
-        create.addActionListener(al);
+        createButton.addActionListener(al);
     }
     
     public void createUserInputs(){
@@ -83,7 +83,7 @@ public class CreateAccountView extends JFrame implements ActionListener{
 
     @Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == create) {
+		if (e.getSource() == createButton) {
             //Create and pass stuff for username and password (i.e. user list model)
             //Create and pass stuff for name, birthdate, and address (i.e. patient list model)
         }
