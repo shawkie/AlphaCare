@@ -16,8 +16,8 @@ public class PatientListCntrl {
     private PatientListView patientListView;
 
     public PatientListCntrl() {
-        //this.model = model;
-        this.patientListView = new PatientListView(this);
+        model = new PatientListModel();
+        patientListView = new PatientListView(this);
     }
     
     public void switchToPatientListView(){

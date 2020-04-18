@@ -19,19 +19,36 @@ public class PatientListTable extends AbstractTableModel {
     public PatientListTable(List<PatientModel> pList){
         this.pList = pList;
     }
+    
+    public String[] getColumnNames(){
+        return columnNames;
+    }
+    
+    public String getColumnName(int i){
+        return columnNames[i];
+    }
+    
+    
     @Override
     public int getRowCount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return pList.size();
     }
 
     @Override
     public int getColumnCount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return columnNames.length;
     }
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        switch(columnIndex){
+            case 0:
+                return (Object) pList.get(rowIndex).getId();
+            case 1:
+                return (Object) pList.get(rowIndex).getName();
+            default:
+                return null;
+        }
     }
     
 }

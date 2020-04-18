@@ -26,10 +26,9 @@ public class MenuCntrl {
         System.out.println("Patient List");
         menuView.setVisible(false);
         patientListCntrl.switchToPatientListView();
-        System.out.println(patientListCntrl.getPatientList().getPatient("John"));
     }
 
     void addNewPatient() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //nothing as of yet
     }
 }

@@ -33,7 +33,7 @@ public class PatientModel {
         this.birthdate = birthdate;
         record = new ArrayList();
         inputRecords();
-        System.out.println(record);
+        
     }
     
     private void inputRecords(){
