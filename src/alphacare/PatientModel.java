@@ -8,9 +8,7 @@ package alphacare;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.JSONObject;
@@ -33,24 +31,23 @@ public class PatientModel {
         this.birthdate = birthdate;
         record = new ArrayList();
         inputRecords();
-        
+        System.out.println(record);
     }
     
+    @SuppressWarnings("unchecked")
     private void inputRecords(){
         JSONParser parser = new JSONParser();
-        
         try
         {
             Object obj = parser.parse(new FileReader("Records.json"));
-            JSONObject jsonObject = (JSONObject) obj;
-            JSONArray recordsArray = (JSONArray) jsonObject.get("Records");
-            Iterator<String> iterator = recordsArray.iterator();
+            JSONArray recordsArray = (JSONArray) obj;
             
-            while(iterator.hasNext())
+            recordsArray.forEach(records -> parseRecordsObject((JSONObject)records));
+            
+            for(int cnt = 0; cnt < recordsArray.size(); cnt++)
             {
-                record.add(iterator);
+                record.add(recordsArray.get(cnt));
             }
-           
         }
         catch(FileNotFoundException e) {
             e.printStackTrace();
@@ -61,10 +58,12 @@ public class PatientModel {
         catch(Exception e) {
             e.printStackTrace();
         }
-//        
-//        record.add(name);
-//        record.add(address);
-//        record.add(birthdate);
+    }
+    
+    private static void parseRecordsObject(JSONObject records) {
+        JSONObject recordObj = (JSONObject) records.get("records");
+        String date = (String) recordObj.get("date");
+        String record = (String) recordObj.get("record");
     }
     
     public ArrayList getRecord(){
