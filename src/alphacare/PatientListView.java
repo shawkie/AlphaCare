@@ -2,6 +2,7 @@ package alphacare;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,11 +30,12 @@ import static javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED;
  * @author Brendan
  */
 public class PatientListView extends JFrame {
-
+    private MenuView mView;
     private PatientListCntrl patientListCntrl;
     private RecordView rView;
     private int currentIndex;
     private JPanel content;
+    private JPanel buttonPanel;
     private JScrollPane scrollPane;
 
     private PatientListModel pList;
@@ -77,15 +79,20 @@ public class PatientListView extends JFrame {
         content.setPreferredSize(new Dimension(350, 150));
 
         content.add(scrollPane);
-
+        
+        buttonPanel = new JPanel((new FlowLayout()));
         viewBtn = new JButton("View Student Details");
         viewBtn.addActionListener(event -> viewRecord());
 
-        backBtn = new JButton("Done");
+        backBtn = new JButton("Back");
         backBtn.addActionListener(event -> back());
-
+        
+        buttonPanel.add(backBtn);
+        buttonPanel.add(viewBtn);
+        
         setContentPane(new JPanel(new BorderLayout()));
         getContentPane().add(content, BorderLayout.CENTER);
+        getContentPane().add(buttonPanel,BorderLayout.SOUTH);
 
     }
 
@@ -93,7 +100,6 @@ public class PatientListView extends JFrame {
         if (table.getSelectionModel().isSelectionEmpty()) {
             JOptionPane.showMessageDialog(rootPane, "Select a student first.");
         } else {
-
             try {
                 currentIndex = table.getSelectedRow();
                 table.getValueAt(table.getSelectedRow(), table.getSelectedColumn());
@@ -101,13 +107,13 @@ public class PatientListView extends JFrame {
                 rView.setDefaultCloseOperation(HIDE_ON_CLOSE);
                 rView.setVisible(true);
             } catch (IndexOutOfBoundsException e) {
-                JOptionPane.showMessageDialog(rootPane, "There are no students registered.");
+                JOptionPane.showMessageDialog(rootPane, "There are no patients registered.");
             }
         }
     }
 
     private void back() {
-
+        dispose();
     }
 }
 

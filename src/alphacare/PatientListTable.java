@@ -14,7 +14,7 @@ import javax.swing.table.AbstractTableModel;
 public class PatientListTable extends AbstractTableModel {
     
     private final List<PatientModel> pList;
-    private final String[] columnNames = {"Name", "Address"};
+    private final String[] columnNames = {"ID", "Name"};
     
     public PatientListTable(List<PatientModel> pList){
         this.pList = pList;
@@ -24,6 +24,7 @@ public class PatientListTable extends AbstractTableModel {
         return columnNames;
     }
     
+    @Override
     public String getColumnName(int i){
         return columnNames[i];
     }

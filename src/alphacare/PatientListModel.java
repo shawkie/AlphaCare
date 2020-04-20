@@ -18,7 +18,7 @@ public class PatientListModel {
     
     public PatientListModel(){
         patientList = new ArrayList();
-        patientList.add(new PatientModel(1,"John","Address","Birthdate"));
+        patientList.add(new PatientModel(0,"John","Address","Birthdate"));
         
     }
 //allows PatientList to be accesss by any other method because of it's static property
@@ -28,6 +28,10 @@ public class PatientListModel {
     
     public ArrayList<PatientModel> getPatientList() {
         return patientList;
+    }
+    
+    public PatientListModel getPatientListModel(){
+        return this;
     }
     
     public PatientModel getPatient(int id) {
