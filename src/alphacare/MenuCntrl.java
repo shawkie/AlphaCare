@@ -28,7 +28,7 @@ public class MenuCntrl {
         patientListCntrl.switchToPatientListView();
     }
 
-    void addNewPatient() {
+    public void addNewPatient() {
         //nothing as of yet
     }
 }

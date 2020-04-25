@@ -50,9 +50,6 @@ public class MenuView extends JFrame{
         viewPatientsButton = new JButton("View Patients");
         viewPatientsButton.addActionListener(event -> menuCntrl.switchToPaitentList());
         
-        newPatientButton = new JButton("Add New Patient");
-        newPatientButton.addActionListener(event -> menuCntrl.addNewPatient());
-        
         buttonPanel.add(viewPatientsButton);
         buttonPanel.add(newPatientButton);
         
