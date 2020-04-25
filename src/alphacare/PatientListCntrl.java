@@ -29,12 +29,17 @@ public class PatientListCntrl {
     }
     
     public void addNewPatient(){
-        int idNum = model.getPatientList().size() + 1;
+        int idNum = model.getPatientList().size();
         String name = JOptionPane.showInputDialog("Enter the Patient's Name:");
         String address = JOptionPane.showInputDialog("Enter the Patient's Address:");
         String birthdate = JOptionPane.showInputDialog("Enter the Patient's Birthdate:");
         
         model.getPatientList().add(new PatientModel(idNum,name,address,birthdate));
+        
+    }
+    
+    public void removePatient(int ind){
+        model.getPatientList().remove(ind);
     }
     
 }

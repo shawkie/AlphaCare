@@ -51,7 +51,6 @@ public class MenuView extends JFrame{
         viewPatientsButton.addActionListener(event -> menuCntrl.switchToPaitentList());
         
         buttonPanel.add(viewPatientsButton);
-        buttonPanel.add(newPatientButton);
         
         setContentPane(new JPanel(new BorderLayout()));
         getContentPane().add(content, BorderLayout.NORTH);

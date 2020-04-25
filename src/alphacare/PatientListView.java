@@ -46,6 +46,8 @@ public class PatientListView extends JFrame {
 
     private JButton viewBtn;
     private JButton backBtn;
+    private JButton addBtn;
+    private JButton deleteBtn;
 
     public String getPatientInfo(String patientListInfo) {
         return patientListInfo;
@@ -83,11 +85,19 @@ public class PatientListView extends JFrame {
         buttonPanel = new JPanel((new FlowLayout()));
         viewBtn = new JButton("View Patient Details");
         viewBtn.addActionListener(event -> viewRecord());
+        
+        addBtn = new JButton("Add New Patient");
+        addBtn.addActionListener(event -> addNew());
+        
+        deleteBtn = new JButton("Remove Patient");
+        deleteBtn.addActionListener(event -> removePatient());
 
         backBtn = new JButton("Back");
         backBtn.addActionListener(event -> back());
         
         buttonPanel.add(backBtn);
+        buttonPanel.add(addBtn);
+        buttonPanel.add(deleteBtn);
         buttonPanel.add(viewBtn);
         
         setContentPane(new JPanel(new BorderLayout()));
@@ -114,6 +124,16 @@ public class PatientListView extends JFrame {
 
     private void back() {
         dispose();
+    }
+
+    private void addNew() {
+        patientListCntrl.addNewPatient();
+        table.updateUI();
+    }
+
+    private void removePatient() {
+        patientListCntrl.removePatient(table.getSelectedRow());
+        table.updateUI();
     }
 }
 
