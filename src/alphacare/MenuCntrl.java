@@ -12,6 +12,7 @@ package alphacare;
 public class MenuCntrl {
     private MenuView menuView;
     private PatientListCntrl patientListCntrl;
+    private ScheduleAppointment scheduleAppointment;
     
     public MenuCntrl(){
         menuView = new MenuView(this);
@@ -26,6 +27,10 @@ public class MenuCntrl {
         System.out.println("Patient List");
         menuView.setVisible(false);
         patientListCntrl.switchToPatientListView();
+    }
+    
+    public void switchToAppointment() {
+        javafx.application.Application.launch(ScheduleAppointment.class);
     }
 
     public void addNewPatient() {

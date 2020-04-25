@@ -25,7 +25,7 @@ public class MenuView extends JFrame{
     private JPanel buttonPanel;
     
     private JButton viewPatientsButton;
-    private JButton newPatientButton;
+    private JButton scheduleAppointment;
     
     public MenuView(MenuCntrl menuCntrl){
         this.menuCntrl = menuCntrl;
@@ -50,8 +50,11 @@ public class MenuView extends JFrame{
         viewPatientsButton = new JButton("View Patients");
         viewPatientsButton.addActionListener(event -> menuCntrl.switchToPaitentList());
         
-        buttonPanel.add(viewPatientsButton);
+        scheduleAppointment = new JButton("Schedule Appointment");
+        scheduleAppointment.addActionListener(event -> menuCntrl.switchToAppointment());
         
+        buttonPanel.add(viewPatientsButton);
+        buttonPanel.add(scheduleAppointment);
         setContentPane(new JPanel(new BorderLayout()));
         getContentPane().add(content, BorderLayout.NORTH);
         getContentPane().add(buttonPanel, BorderLayout.CENTER);
