@@ -81,7 +81,7 @@ public class PatientListView extends JFrame {
         content.add(scrollPane);
         
         buttonPanel = new JPanel((new FlowLayout()));
-        viewBtn = new JButton("View Student Details");
+        viewBtn = new JButton("View Patient Details");
         viewBtn.addActionListener(event -> viewRecord());
 
         backBtn = new JButton("Back");

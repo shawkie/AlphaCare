@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/PatientModel.java</file>
             <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/PatientListCntrl.java</file>
             <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/MenuView.java</file>
@@ -10,6 +11,15 @@
             <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/RecordView.java</file>
             <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/PatientListModel.java</file>
             <file>file:/C:/Users/Jeffrey%20Oh/Documents/NetBeansProjects/AlphaCare/src/alphacare/MenuCntrl.java</file>
+=======
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/MenuView.java</file>
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/MenuCntrl.java</file>
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/RecordModel.java</file>
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/RecordView.java</file>
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/PatientView.java</file>
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/RecordListModel.java</file>
+            <file>file:/D:/Users/Documents/git/AlphaCare/src/alphacare/PatientModel.java</file>
+>>>>>>> abfd7114e1bf2bb28fb8bfe38a9886c44349b9b2
         </group>
     </open-files>
 </project-private>
